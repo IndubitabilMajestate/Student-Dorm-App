@@ -12,9 +12,15 @@ namespace WindowsFormsApp1
 {
     public partial class FrontPage_Form : Form
     {
+        private DbMethods dbMethods;
+        
         public FrontPage_Form()
         {
             InitializeComponent();
+            dbMethods = new DbMethods();
+            string[] studentData = dbMethods.ShowData("Students");
+            string message = String.Join("\n", studentData);
+            MessageBox.Show(message);
         }
     }
 }

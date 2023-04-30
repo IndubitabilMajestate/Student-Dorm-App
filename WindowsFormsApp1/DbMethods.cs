@@ -7,17 +7,19 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    internal class DbMethods
-    {
+    public class DbMethods
+    { 
+        private string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True";
+        SqlConnection myCon = new SqlConnection();
         public void AddToDb(string table)
         {
-            
-            SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True";
+            myCon.ConnectionString = ConnectionString;
             myCon.Open();
+
             /*
             switch (table) {
             
@@ -54,7 +56,7 @@ namespace WindowsFormsApp1
                     addcmd.ExecuteNonQuery();
 
                     break;
-
+            
                 case "PitchReservations":
                     string addquery = "INSERT INTO PitchReservations (IdReservation, StudentId, DateOfRes) " +
                         "VALUES (@IdReservation, @StudentId, @DateOfRes)";
@@ -80,7 +82,7 @@ namespace WindowsFormsApp1
                     break;
 
                 case "WashroomReservations":
-                    string addquery = "INSERT INTO PitchReservations (IdReservation, RoomNumber, DateOfRes) " +
+                    string addquery = "INSERT INTO WashroomReservations (IdReservation, RoomNumber, DateOfRes) " +
                         "VALUES (@IdReservation, @RoomNumber, @DateOfRes)";
                     SqlCommand addcmd = new SqlCommand(addquery, myCon);
                     addcmd.Parameters.AddWithValue("@IdReservation", );
@@ -94,13 +96,13 @@ namespace WindowsFormsApp1
             }
             */
 
-
+            myCon.Close();
         }
 
-        public void ShowData(string table)
+        public string[] ShowData(string table)
         {
-            SqlConnection myCon = new SqlConnection();
-            myCon.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True";
+            List<string> studentData = new List<string>();
+            myCon.ConnectionString = ConnectionString;
             myCon.Open();
 
             switch (table)
@@ -109,13 +111,19 @@ namespace WindowsFormsApp1
                     DataSet dsStud = new DataSet();
                     SqlDataAdapter daStud = new SqlDataAdapter("SELECT * FROM Students", myCon);
                     daStud.Fill(dsStud, "Students");
-                   
+
                     foreach (DataRow dr in dsStud.Tables["Students"].Rows)
                     {
-                        String item = dr.ItemArray.GetValue(1).ToString();
+                        string data = String.Join(",", dr.ItemArray.Select(x => x.ToString()));
+                        studentData.Add(data);
                     }
                     break;
             }
+            myCon.Close();
+            //string message = String.Join("\n", studentData);
+            //MessageBox.Show(message);
+            return studentData.ToArray();
+           
         }
     }
 }
