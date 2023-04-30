@@ -16,3 +16,5 @@ C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\Wind
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.pdb
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AnnComStudent.resources
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.StudentPage.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj.mdf
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj_log.ldf
