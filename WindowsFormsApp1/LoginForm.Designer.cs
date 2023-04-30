@@ -99,6 +99,7 @@
             this.FrontPage_LI_btn.TabIndex = 3;
             this.FrontPage_LI_btn.Text = "Log In";
             this.FrontPage_LI_btn.UseVisualStyleBackColor = true;
+            this.FrontPage_LI_btn.Click += new System.EventHandler(this.FrontPage_LI_btn_Click);
             // 
             // FrontPage_Form
             // 

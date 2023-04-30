@@ -30,46 +30,71 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.RoomPage_SD_btn4 = new System.Windows.Forms.Button();
+            this.Facultate4 = new System.Windows.Forms.Label();
+            this.PCD4 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.An4 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.Contact4 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.Prenume4 = new System.Windows.Forms.Label();
+            this.Nume4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.RoomPage_SD_btn3 = new System.Windows.Forms.Button();
+            this.Facultate3 = new System.Windows.Forms.Label();
+            this.PCD3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.An3 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Contact3 = new System.Windows.Forms.Label();
+            this.Nume3 = new System.Windows.Forms.Label();
+            this.Prenume3 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.RoomPage_SD_btn2 = new System.Windows.Forms.Button();
+            this.Facultate2 = new System.Windows.Forms.Label();
+            this.PCD2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.An2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.Contact2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Prenume2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Nume2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.RoomPage_SD_btn1 = new System.Windows.Forms.Button();
+            this.Facultate1 = new System.Windows.Forms.Label();
+            this.PCD1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.An1 = new System.Windows.Forms.Label();
+            this.Contact1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Prenume1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Nume1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.RoomPage_PP1_img = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.RoomPage_S1D_btn = new System.Windows.Forms.Button();
-            this.RoomPage_S2D_btn = new System.Windows.Forms.Button();
-            this.RoomPage_S4D_btn = new System.Windows.Forms.Button();
-            this.RoomPage_S3D_btn = new System.Windows.Forms.Button();
+            this.RoomID_lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -96,37 +121,52 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.RoomPage_S4D_btn);
-            this.panel5.Controls.Add(this.label22);
-            this.panel5.Controls.Add(this.label23);
+            this.panel5.Controls.Add(this.RoomPage_SD_btn4);
+            this.panel5.Controls.Add(this.Facultate4);
+            this.panel5.Controls.Add(this.PCD4);
             this.panel5.Controls.Add(this.label24);
             this.panel5.Controls.Add(this.label25);
+            this.panel5.Controls.Add(this.label32);
             this.panel5.Controls.Add(this.label26);
+            this.panel5.Controls.Add(this.An4);
             this.panel5.Controls.Add(this.label27);
+            this.panel5.Controls.Add(this.Contact4);
             this.panel5.Controls.Add(this.label28);
             this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.label30);
+            this.panel5.Controls.Add(this.Prenume4);
+            this.panel5.Controls.Add(this.Nume4);
             this.panel5.Location = new System.Drawing.Point(402, 257);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(395, 200);
             this.panel5.TabIndex = 0;
             // 
-            // label22
+            // RoomPage_SD_btn4
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(92, 81);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 13);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "Grupa";
+            this.RoomPage_SD_btn4.Location = new System.Drawing.Point(252, 127);
+            this.RoomPage_SD_btn4.Name = "RoomPage_SD_btn4";
+            this.RoomPage_SD_btn4.Size = new System.Drawing.Size(110, 23);
+            this.RoomPage_SD_btn4.TabIndex = 2;
+            this.RoomPage_SD_btn4.Text = "See Private Details";
+            this.RoomPage_SD_btn4.UseVisualStyleBackColor = true;
             // 
-            // label23
+            // Facultate4
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(92, 68);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(37, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Sectia";
+            this.Facultate4.AutoSize = true;
+            this.Facultate4.Location = new System.Drawing.Point(151, 55);
+            this.Facultate4.Name = "Facultate4";
+            this.Facultate4.Size = new System.Drawing.Size(51, 13);
+            this.Facultate4.TabIndex = 1;
+            this.Facultate4.Text = "Facultate";
+            // 
+            // PCD4
+            // 
+            this.PCD4.AutoSize = true;
+            this.PCD4.Location = new System.Drawing.Point(151, 81);
+            this.PCD4.Name = "PCD4";
+            this.PCD4.Size = new System.Drawing.Size(29, 13);
+            this.PCD4.TabIndex = 1;
+            this.PCD4.Text = "PCD";
             // 
             // label24
             // 
@@ -146,6 +186,15 @@
             this.label25.TabIndex = 1;
             this.label25.Text = "An curent";
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(92, 81);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(29, 13);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "PCD";
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -155,6 +204,15 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "Prenume";
             // 
+            // An4
+            // 
+            this.An4.AutoSize = true;
+            this.An4.Location = new System.Drawing.Point(151, 42);
+            this.An4.Name = "An4";
+            this.An4.Size = new System.Drawing.Size(53, 13);
+            this.An4.TabIndex = 1;
+            this.An4.Text = "An curent";
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -163,6 +221,15 @@
             this.label27.Size = new System.Drawing.Size(35, 13);
             this.label27.TabIndex = 1;
             this.label27.Text = "Nume";
+            // 
+            // Contact4
+            // 
+            this.Contact4.AutoSize = true;
+            this.Contact4.Location = new System.Drawing.Point(151, 68);
+            this.Contact4.Name = "Contact4";
+            this.Contact4.Size = new System.Drawing.Size(44, 13);
+            this.Contact4.TabIndex = 1;
+            this.Contact4.Text = "Contact";
             // 
             // label28
             // 
@@ -181,39 +248,81 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(92, 68);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(44, 13);
+            this.label30.TabIndex = 1;
+            this.label30.Text = "Contact";
+            // 
+            // Prenume4
+            // 
+            this.Prenume4.AutoSize = true;
+            this.Prenume4.Location = new System.Drawing.Point(151, 29);
+            this.Prenume4.Name = "Prenume4";
+            this.Prenume4.Size = new System.Drawing.Size(49, 13);
+            this.Prenume4.TabIndex = 1;
+            this.Prenume4.Text = "Prenume";
+            // 
+            // Nume4
+            // 
+            this.Nume4.AutoSize = true;
+            this.Nume4.Location = new System.Drawing.Point(151, 16);
+            this.Nume4.Name = "Nume4";
+            this.Nume4.Size = new System.Drawing.Size(35, 13);
+            this.Nume4.TabIndex = 1;
+            this.Nume4.Text = "Nume";
+            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.RoomPage_S3D_btn);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.label16);
+            this.panel4.Controls.Add(this.RoomPage_SD_btn3);
+            this.panel4.Controls.Add(this.Facultate3);
+            this.panel4.Controls.Add(this.PCD3);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.label19);
+            this.panel4.Controls.Add(this.label36);
             this.panel4.Controls.Add(this.label20);
+            this.panel4.Controls.Add(this.An3);
             this.panel4.Controls.Add(this.label21);
             this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.Contact3);
+            this.panel4.Controls.Add(this.Nume3);
+            this.panel4.Controls.Add(this.Prenume3);
+            this.panel4.Controls.Add(this.label34);
             this.panel4.Location = new System.Drawing.Point(3, 257);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(395, 200);
             this.panel4.TabIndex = 0;
             // 
-            // label15
+            // RoomPage_SD_btn3
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(92, 81);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(36, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Grupa";
+            this.RoomPage_SD_btn3.Location = new System.Drawing.Point(230, 127);
+            this.RoomPage_SD_btn3.Name = "RoomPage_SD_btn3";
+            this.RoomPage_SD_btn3.Size = new System.Drawing.Size(110, 23);
+            this.RoomPage_SD_btn3.TabIndex = 2;
+            this.RoomPage_SD_btn3.Text = "See Private Details";
+            this.RoomPage_SD_btn3.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // Facultate3
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(92, 68);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 13);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Sectia";
+            this.Facultate3.AutoSize = true;
+            this.Facultate3.Location = new System.Drawing.Point(146, 55);
+            this.Facultate3.Name = "Facultate3";
+            this.Facultate3.Size = new System.Drawing.Size(51, 13);
+            this.Facultate3.TabIndex = 1;
+            this.Facultate3.Text = "Facultate";
+            // 
+            // PCD3
+            // 
+            this.PCD3.AutoSize = true;
+            this.PCD3.Location = new System.Drawing.Point(146, 81);
+            this.PCD3.Name = "PCD3";
+            this.PCD3.Size = new System.Drawing.Size(29, 13);
+            this.PCD3.TabIndex = 1;
+            this.PCD3.Text = "PCD";
             // 
             // label17
             // 
@@ -242,6 +351,15 @@
             this.label19.TabIndex = 1;
             this.label19.Text = "Prenume";
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(92, 81);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(29, 13);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "PCD";
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -250,6 +368,15 @@
             this.label20.Size = new System.Drawing.Size(35, 13);
             this.label20.TabIndex = 1;
             this.label20.Text = "Nume";
+            // 
+            // An3
+            // 
+            this.An3.AutoSize = true;
+            this.An3.Location = new System.Drawing.Point(146, 42);
+            this.An3.Name = "An3";
+            this.An3.Size = new System.Drawing.Size(53, 13);
+            this.An3.TabIndex = 1;
+            this.An3.Text = "An curent";
             // 
             // label21
             // 
@@ -268,29 +395,90 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // Contact3
+            // 
+            this.Contact3.AutoSize = true;
+            this.Contact3.Location = new System.Drawing.Point(146, 68);
+            this.Contact3.Name = "Contact3";
+            this.Contact3.Size = new System.Drawing.Size(44, 13);
+            this.Contact3.TabIndex = 1;
+            this.Contact3.Text = "Contact";
+            // 
+            // Nume3
+            // 
+            this.Nume3.AutoSize = true;
+            this.Nume3.Location = new System.Drawing.Point(146, 16);
+            this.Nume3.Name = "Nume3";
+            this.Nume3.Size = new System.Drawing.Size(35, 13);
+            this.Nume3.TabIndex = 1;
+            this.Nume3.Text = "Nume";
+            // 
+            // Prenume3
+            // 
+            this.Prenume3.AutoSize = true;
+            this.Prenume3.Location = new System.Drawing.Point(146, 29);
+            this.Prenume3.Name = "Prenume3";
+            this.Prenume3.Size = new System.Drawing.Size(49, 13);
+            this.Prenume3.TabIndex = 1;
+            this.Prenume3.Text = "Prenume";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(92, 68);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(44, 13);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "Contact";
+            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.RoomPage_S2D_btn);
-            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.RoomPage_SD_btn2);
+            this.panel3.Controls.Add(this.Facultate2);
+            this.panel3.Controls.Add(this.PCD2);
             this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.An2);
             this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.Contact2);
             this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.Prenume2);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.Nume2);
             this.panel3.Location = new System.Drawing.Point(402, 51);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(395, 200);
             this.panel3.TabIndex = 0;
             // 
-            // label9
+            // RoomPage_SD_btn2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(92, 68);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Sectia";
+            this.RoomPage_SD_btn2.Location = new System.Drawing.Point(252, 126);
+            this.RoomPage_SD_btn2.Name = "RoomPage_SD_btn2";
+            this.RoomPage_SD_btn2.Size = new System.Drawing.Size(110, 23);
+            this.RoomPage_SD_btn2.TabIndex = 2;
+            this.RoomPage_SD_btn2.Text = "See Private Details";
+            this.RoomPage_SD_btn2.UseVisualStyleBackColor = true;
+            // 
+            // Facultate2
+            // 
+            this.Facultate2.AutoSize = true;
+            this.Facultate2.Location = new System.Drawing.Point(151, 55);
+            this.Facultate2.Name = "Facultate2";
+            this.Facultate2.Size = new System.Drawing.Size(51, 13);
+            this.Facultate2.TabIndex = 1;
+            this.Facultate2.Text = "Facultate";
+            // 
+            // PCD2
+            // 
+            this.PCD2.AutoSize = true;
+            this.PCD2.Location = new System.Drawing.Point(151, 81);
+            this.PCD2.Name = "PCD2";
+            this.PCD2.Size = new System.Drawing.Size(29, 13);
+            this.PCD2.TabIndex = 1;
+            this.PCD2.Text = "PCD";
             // 
             // label10
             // 
@@ -301,6 +489,15 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "Facultate";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(92, 81);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(29, 13);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "PCD";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -309,6 +506,15 @@
             this.label11.Size = new System.Drawing.Size(53, 13);
             this.label11.TabIndex = 1;
             this.label11.Text = "An curent";
+            // 
+            // An2
+            // 
+            this.An2.AutoSize = true;
+            this.An2.Location = new System.Drawing.Point(151, 42);
+            this.An2.Name = "An2";
+            this.An2.Size = new System.Drawing.Size(53, 13);
+            this.An2.TabIndex = 1;
+            this.An2.Text = "An curent";
             // 
             // label12
             // 
@@ -319,6 +525,15 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Prenume";
             // 
+            // Contact2
+            // 
+            this.Contact2.AutoSize = true;
+            this.Contact2.Location = new System.Drawing.Point(151, 68);
+            this.Contact2.Name = "Contact2";
+            this.Contact2.Size = new System.Drawing.Size(44, 13);
+            this.Contact2.TabIndex = 1;
+            this.Contact2.Text = "Contact";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -327,6 +542,24 @@
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 1;
             this.label13.Text = "Nume";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(92, 68);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Contact";
+            // 
+            // Prenume2
+            // 
+            this.Prenume2.AutoSize = true;
+            this.Prenume2.Location = new System.Drawing.Point(151, 29);
+            this.Prenume2.Name = "Prenume2";
+            this.Prenume2.Size = new System.Drawing.Size(49, 13);
+            this.Prenume2.TabIndex = 1;
+            this.Prenume2.Text = "Prenume";
             // 
             // label14
             // 
@@ -345,14 +578,29 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // Nume2
+            // 
+            this.Nume2.AutoSize = true;
+            this.Nume2.Location = new System.Drawing.Point(151, 16);
+            this.Nume2.Name = "Nume2";
+            this.Nume2.Size = new System.Drawing.Size(35, 13);
+            this.Nume2.TabIndex = 1;
+            this.Nume2.Text = "Nume";
+            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.RoomPage_S1D_btn);
+            this.panel2.Controls.Add(this.RoomPage_SD_btn1);
+            this.panel2.Controls.Add(this.Facultate1);
+            this.panel2.Controls.Add(this.PCD1);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.An1);
+            this.panel2.Controls.Add(this.Contact1);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.Prenume1);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.Nume1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.RoomPage_PP1_img);
@@ -361,23 +609,41 @@
             this.panel2.Size = new System.Drawing.Size(395, 200);
             this.panel2.TabIndex = 0;
             // 
+            // RoomPage_SD_btn1
+            // 
+            this.RoomPage_SD_btn1.Location = new System.Drawing.Point(230, 126);
+            this.RoomPage_SD_btn1.Name = "RoomPage_SD_btn1";
+            this.RoomPage_SD_btn1.Size = new System.Drawing.Size(110, 23);
+            this.RoomPage_SD_btn1.TabIndex = 2;
+            this.RoomPage_SD_btn1.Text = "See Private Details";
+            this.RoomPage_SD_btn1.UseVisualStyleBackColor = true;
+            // 
+            // Facultate1
+            // 
+            this.Facultate1.AutoSize = true;
+            this.Facultate1.Location = new System.Drawing.Point(146, 55);
+            this.Facultate1.Name = "Facultate1";
+            this.Facultate1.Size = new System.Drawing.Size(51, 13);
+            this.Facultate1.TabIndex = 1;
+            this.Facultate1.Text = "Facultate";
+            // 
+            // PCD1
+            // 
+            this.PCD1.AutoSize = true;
+            this.PCD1.Location = new System.Drawing.Point(146, 81);
+            this.PCD1.Name = "PCD1";
+            this.PCD1.Size = new System.Drawing.Size(29, 13);
+            this.PCD1.TabIndex = 1;
+            this.PCD1.Text = "PCD";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(92, 81);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(36, 13);
+            this.label7.Size = new System.Drawing.Size(29, 13);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Grupa";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(92, 68);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Sectia";
+            this.label7.Text = "PCD";
             // 
             // label5
             // 
@@ -388,6 +654,33 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Facultate";
             // 
+            // An1
+            // 
+            this.An1.AutoSize = true;
+            this.An1.Location = new System.Drawing.Point(146, 42);
+            this.An1.Name = "An1";
+            this.An1.Size = new System.Drawing.Size(53, 13);
+            this.An1.TabIndex = 1;
+            this.An1.Text = "An curent";
+            // 
+            // Contact1
+            // 
+            this.Contact1.AutoSize = true;
+            this.Contact1.Location = new System.Drawing.Point(146, 68);
+            this.Contact1.Name = "Contact1";
+            this.Contact1.Size = new System.Drawing.Size(44, 13);
+            this.Contact1.TabIndex = 1;
+            this.Contact1.Text = "Contact";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(92, 68);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Contact";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -397,6 +690,15 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "An curent";
             // 
+            // Prenume1
+            // 
+            this.Prenume1.AutoSize = true;
+            this.Prenume1.Location = new System.Drawing.Point(146, 29);
+            this.Prenume1.Name = "Prenume1";
+            this.Prenume1.Size = new System.Drawing.Size(49, 13);
+            this.Prenume1.TabIndex = 1;
+            this.Prenume1.Text = "Prenume";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -405,6 +707,15 @@
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Prenume";
+            // 
+            // Nume1
+            // 
+            this.Nume1.AutoSize = true;
+            this.Nume1.Location = new System.Drawing.Point(146, 16);
+            this.Nume1.Name = "Nume1";
+            this.Nume1.Size = new System.Drawing.Size(35, 13);
+            this.Nume1.TabIndex = 1;
+            this.Nume1.Text = "Nume";
             // 
             // label2
             // 
@@ -434,56 +745,20 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.RoomID_lbl);
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(794, 42);
             this.panel6.TabIndex = 0;
             // 
-            // label8
+            // RoomID_lbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(-3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Camera ###";
-            // 
-            // RoomPage_S1D_btn
-            // 
-            this.RoomPage_S1D_btn.Location = new System.Drawing.Point(149, 126);
-            this.RoomPage_S1D_btn.Name = "RoomPage_S1D_btn";
-            this.RoomPage_S1D_btn.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_S1D_btn.TabIndex = 2;
-            this.RoomPage_S1D_btn.Text = "See Private Details";
-            this.RoomPage_S1D_btn.UseVisualStyleBackColor = true;
-            // 
-            // RoomPage_S2D_btn
-            // 
-            this.RoomPage_S2D_btn.Location = new System.Drawing.Point(154, 126);
-            this.RoomPage_S2D_btn.Name = "RoomPage_S2D_btn";
-            this.RoomPage_S2D_btn.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_S2D_btn.TabIndex = 2;
-            this.RoomPage_S2D_btn.Text = "See Private Details";
-            this.RoomPage_S2D_btn.UseVisualStyleBackColor = true;
-            // 
-            // RoomPage_S4D_btn
-            // 
-            this.RoomPage_S4D_btn.Location = new System.Drawing.Point(154, 127);
-            this.RoomPage_S4D_btn.Name = "RoomPage_S4D_btn";
-            this.RoomPage_S4D_btn.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_S4D_btn.TabIndex = 2;
-            this.RoomPage_S4D_btn.Text = "See Private Details";
-            this.RoomPage_S4D_btn.UseVisualStyleBackColor = true;
-            // 
-            // RoomPage_S3D_btn
-            // 
-            this.RoomPage_S3D_btn.Location = new System.Drawing.Point(149, 127);
-            this.RoomPage_S3D_btn.Name = "RoomPage_S3D_btn";
-            this.RoomPage_S3D_btn.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_S3D_btn.TabIndex = 2;
-            this.RoomPage_S3D_btn.Text = "See Private Details";
-            this.RoomPage_S3D_btn.UseVisualStyleBackColor = true;
+            this.RoomID_lbl.AutoSize = true;
+            this.RoomID_lbl.Location = new System.Drawing.Point(-3, 0);
+            this.RoomID_lbl.Name = "RoomID_lbl";
+            this.RoomID_lbl.Size = new System.Drawing.Size(67, 13);
+            this.RoomID_lbl.TabIndex = 1;
+            this.RoomID_lbl.Text = "Camera ###";
             // 
             // RoomPage
             // 
@@ -516,8 +791,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -526,8 +799,6 @@
         private System.Windows.Forms.PictureBox RoomPage_PP1_img;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
@@ -535,8 +806,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -544,17 +813,48 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button RoomPage_S4D_btn;
-        private System.Windows.Forms.Button RoomPage_S3D_btn;
-        private System.Windows.Forms.Button RoomPage_S2D_btn;
-        private System.Windows.Forms.Button RoomPage_S1D_btn;
+        private System.Windows.Forms.Label RoomID_lbl;
+        private System.Windows.Forms.Button RoomPage_SD_btn4;
+        private System.Windows.Forms.Button RoomPage_SD_btn3;
+        private System.Windows.Forms.Button RoomPage_SD_btn2;
+        private System.Windows.Forms.Button RoomPage_SD_btn1;
+        private System.Windows.Forms.Label Facultate4;
+        private System.Windows.Forms.Label PCD4;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label An4;
+        private System.Windows.Forms.Label Contact4;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label Prenume4;
+        private System.Windows.Forms.Label Nume4;
+        private System.Windows.Forms.Label Facultate3;
+        private System.Windows.Forms.Label PCD3;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label An3;
+        private System.Windows.Forms.Label Contact3;
+        private System.Windows.Forms.Label Nume3;
+        private System.Windows.Forms.Label Prenume3;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label Facultate2;
+        private System.Windows.Forms.Label PCD2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label An2;
+        private System.Windows.Forms.Label Contact2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label Prenume2;
+        private System.Windows.Forms.Label Nume2;
+        private System.Windows.Forms.Label Facultate1;
+        private System.Windows.Forms.Label PCD1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label An1;
+        private System.Windows.Forms.Label Contact1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Prenume1;
+        private System.Windows.Forms.Label Nume1;
     }
 }

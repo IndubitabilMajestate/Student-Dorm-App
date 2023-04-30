@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0F0252BD-51C9-428F-9707-43F260842CD7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp1</RootNamespace>
-    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <RootNamespace>StudentDormApp</RootNamespace>
+    <AssemblyName>Student-Dorm-App</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,12 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnnComStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnnComStudent.Designer.cs">
+      <DependentUpon>AnnComStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnnouncementPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +90,17 @@
     <Compile Include="RoomPage.Designer.cs">
       <DependentUpon>RoomPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentPage.Designer.cs">
+      <DependentUpon>StudentPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnnComStudent.resx">
+      <DependentUpon>AnnComStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnnouncementPage.resx">
       <DependentUpon>AnnouncementPage.cs</DependentUpon>
@@ -104,12 +119,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RoomManagementPage.resx">
       <DependentUpon>RoomManagementPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomPage.resx">
       <DependentUpon>RoomPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentPage.resx">
+      <DependentUpon>StudentPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
