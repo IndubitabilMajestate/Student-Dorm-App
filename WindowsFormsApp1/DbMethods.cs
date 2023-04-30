@@ -82,12 +82,14 @@ namespace WindowsFormsApp1
                     break;
 
                 case "WashroomReservations":
-                    string addquery = "INSERT INTO WashroomReservations (IdReservation, RoomNumber, DateOfRes) " +
-                        "VALUES (@IdReservation, @RoomNumber, @DateOfRes)";
-                    SqlCommand addcmd = new SqlCommand(addquery, myCon);
-                    addcmd.Parameters.AddWithValue("@IdReservation", );
+            //aici am pus identity si trebe sa sterg addu de id, teoretic merge
+                    string addquery = "INSERT INTO WashroomReservations (RoomNumber, DateOfRes, TimeOfRes, Floor) " +
+                        "VALUES (@RoomNumber, @DateOfRes, @Floor)";
+                    SqlCommand addcmd = new SqlCommand(addquery, myCon);      
                     addcmd.Parameters.AddWithValue("@RoomNumber", );
-                    addcmd.Parameters.AddWithValue("@DateOfRes", );
+                    addcmd.Parameters.AddWithValue("@DateOfRes, dtpicker_DateWash.Value.ToShortDateString);
+                    addcmd.Parameters.AddWithValue("@TimeOfRes", dtpicker_TimeWash.Value.ToShortTimeString);
+                    addcmd.Parameters.AddWithValue("@Floor", tbFloorWashroom.Text);
 
 
                     addcmd.ExecuteNonQuery();
