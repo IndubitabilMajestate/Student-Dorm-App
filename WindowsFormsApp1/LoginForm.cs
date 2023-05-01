@@ -21,8 +21,9 @@ namespace WindowsFormsApp1
             InitializeComponent();
             dbMethods = new DbMethods();
             string[] studentData = dbMethods.ShowData("Students");
+            string[] renttest = dbMethods.ShowData("Students_Payments_Rent");
             string message = String.Join("\n", studentData);
-            MessageBox.Show(message);
+           
         }
 
         private void FrontPage_LI_btn_Click(object sender, EventArgs e)

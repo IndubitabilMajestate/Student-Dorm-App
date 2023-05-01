@@ -12,9 +12,13 @@ namespace WindowsFormsApp1
 {
     public partial class Rents : Form
     {
+        private DbMethods dbMethods;
         public Rents()
         {
             InitializeComponent();
+            dbMethods = new DbMethods();
+            
+            string[] renttest = dbMethods.ShowData("Students_Payments_Rent");
         }
 
         private void Rents_Load(object sender, EventArgs e)
