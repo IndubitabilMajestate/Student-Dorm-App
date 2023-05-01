@@ -115,6 +115,7 @@
             this.Controls.Add(this.FrontPage_UN_tb);
             this.Name = "FrontPage_Form";
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.FrontPage_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

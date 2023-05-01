@@ -19,7 +19,8 @@ namespace WindowsFormsApp1
 
         private void Rents_Load(object sender, EventArgs e)
         {
-
+            //select data from Students_Payments where Paid=1
+            //Student id, date, time, Sum to Pay
         }
 
         private void PaymentContent_SelectedIndexChanged(object sender, EventArgs e)
