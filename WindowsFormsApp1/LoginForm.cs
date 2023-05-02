@@ -20,9 +20,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             dbMethods = new DbMethods();
-            string[] studentData = dbMethods.ShowData("Students");
-            string[] renttest = dbMethods.ShowData("Students_Payments_Rent");
-            string message = String.Join("\n", studentData);
+           // string[] studentData = dbMethods.ShowData("Students");
+            DataSet renttest = dbMethods.ShowData("Students_Payments_Rent");
+            MessageBox.Show(renttest.GetXml());
+           // string message = String.Join("\n", studentData);
            
         }
 

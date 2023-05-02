@@ -14,17 +14,21 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     public class DbMethods
-    { 
-        private string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True";
-        SqlConnection myCon = new SqlConnection();
+    {
+        public string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True;Max Pool Size=100";
+
+
         public void AddToDb(string table)
         {
+            SqlConnection myCon = new SqlConnection();
+
             myCon.ConnectionString = ConnectionString;
             myCon.Open();
             AdminAddStudent adminAddStudent = new AdminAddStudent();
 
 
-            switch (table) {
+            switch (table)
+            {
 
                 case "Students":
                     string addquery = "INSERT INTO Students (LastName, FirstName, Faculty_Year, Faculty, PCD, Room, Username, Password, Email, IDCard, ProfilePic) " +
@@ -42,8 +46,8 @@ namespace WindowsFormsApp1
                     addcmd.Parameters.AddWithValue("@Email", adminAddStudent.tb_EmailAdd.Text);
 
 
-                    //addcmd.Parameters.AddWithValue("@IDCard", );
-                    //addcmd.Parameters.AddWithValue("@ProfilePic", );
+                    addcmd.Parameters.AddWithValue("@IDCard", 0);
+                    addcmd.Parameters.AddWithValue("@ProfilePic", 0);
                     addcmd.ExecuteNonQuery();
 
                     break;
@@ -100,62 +104,58 @@ namespace WindowsFormsApp1
                             addcmd.ExecuteNonQuery();
                             break;
 
-                    
                     */
+
             }
             myCon.Close();
         }
 
-        public string[] ShowData(string table)
+        public DataSet ShowData(string table)
         {
             List<string> studentData = new List<string>();
-            myCon.ConnectionString = ConnectionString;
-            myCon.Open();
-            Rents rents = new Rents();
-            switch (table)
+            using (SqlConnection myCon = new SqlConnection(ConnectionString))
+                
             {
-                case "Students":
-                    DataSet dsStud = new DataSet();
-                    SqlDataAdapter daStud = new SqlDataAdapter("SELECT * FROM Students", myCon);
-                    daStud.Fill(dsStud, "Students");
+                switch (table)
+                {
+                    case "Students":
+                        DataSet dsStud = new DataSet();
+                        SqlDataAdapter daStud = new SqlDataAdapter("SELECT * FROM Students", myCon);
+                        daStud.Fill(dsStud, "Students");
+                        /*
+                        foreach (DataRow dr in dsStud.Tables["Students"].Rows)
+                        {
+                            string data = String.Join(",", dr.ItemArray.Select(x => x.ToString()));
+                            studentData.Add(data);
+                        }
+                        */
+                        myCon.Close();
+                        return dsStud;
 
-                    foreach (DataRow dr in dsStud.Tables["Students"].Rows)
-                    {
-                        string data = String.Join(",", dr.ItemArray.Select(x => x.ToString()));
-                        studentData.Add(data);
-                    }
-                    return studentData.ToArray();
 
-                    break;
+                        break;
+                        
+                     case "Students_Payments_Rent":
+                         Rents rents = new Rents();
+                         DataSet dsPayments = new DataSet();
+                         SqlDataAdapter daPayments = new SqlDataAdapter("SELECT * FROM Students_Payments WHERE PaymentType = 'Rent'", myCon);
+                         daPayments.Fill(dsPayments, "Students_Payments");
+                         BindingList<string> bindingList = new BindingList<string>();
+                         string blabla = dsPayments.GetXml();
+                         MessageBox.Show(blabla); // asta afiseaza
+                        myCon.Close();
+                        return dsPayments;
+                        
+                        break;
 
-                case "Students_Payments_Rent":
-                    DataSet dsPayments = new DataSet();
-                    SqlDataAdapter daPayments = new SqlDataAdapter("SELECT * FROM Students_Payments WHERE PaymentType = 'Rent'", myCon);
-                    daPayments.Fill(dsPayments, "Students_Payments");
-                    BindingList<string> bindingList = new BindingList<string>();
-                    //string blabla = dsPayments.GetXml();
-                    //MessageBox.Show(blabla); // asta afiseaza
+                    default: 
+                        return null;
 
-                    foreach (DataRow row in dsPayments.Tables["Students_Payments"].Rows)
-                    {
+                }
 
-                        string Student_Id = row["Student_Id"].ToString();
-                        string Payment_Id = row["Payment_Id"].ToString();
-                        string Paid = row["Paid"].ToString();
-                        string PaymentDate = row["PaymentDate"].ToString();
-                        string PaymentType = row["PaymentType"].ToString();
-                        string SumToPay = row["SumToPay"].ToString();
-                        string displayText = string.Format("{0} | {1} | {2} | {3} | {4} | {5} | {6}", Student_Id, Payment_Id, Paid, PaymentDate, PaymentType, SumToPay);
-                        bindingList.Add(displayText);
-                    }
-                    rents.PaymentContent.DataSource = bindingList;
-
-                    break;
             }
-            myCon.Close();
-            //string message = String.Join("\n", studentData);
-            //MessageBox.Show(message);
-           
         }
+        
     }
 }
+
