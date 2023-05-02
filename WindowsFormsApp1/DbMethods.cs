@@ -112,6 +112,7 @@ namespace WindowsFormsApp1
 
         public DataSet ShowData(string table)
         {
+            Rents rents = new Rents();
             List<string> studentData = new List<string>();
             using (SqlConnection myCon = new SqlConnection(ConnectionString))
                 
@@ -135,18 +136,38 @@ namespace WindowsFormsApp1
 
                         break;
                         
-                     case "Students_Payments_Rent":
-                         Rents rents = new Rents();
-                         DataSet dsPayments = new DataSet();
-                         SqlDataAdapter daPayments = new SqlDataAdapter("SELECT * FROM Students_Payments WHERE PaymentType = 'Rent'", myCon);
-                         daPayments.Fill(dsPayments, "Students_Payments");
-                         BindingList<string> bindingList = new BindingList<string>();
-                         string blabla = dsPayments.GetXml();
-                         MessageBox.Show(blabla); // asta afiseaza
+                     case "Students_Payments":
+                       
+                        DataSet dsPayments = new DataSet();
+                        SqlDataAdapter daPayments = new SqlDataAdapter("SELECT * FROM Students_Payments", myCon);
+                        daPayments.Fill(dsPayments, "Students_Payments");
+                        
                         myCon.Close();
                         return dsPayments;
-                        
+
                         break;
+                    case "Students_Payments_Rent":
+                        DataSet dsPayments1 = new DataSet();
+                        SqlDataAdapter daPayments1 = new SqlDataAdapter("SELECT * FROM Students_Payments WHERE PaymentType = 'Rent'", myCon);
+                        daPayments1.Fill(dsPayments1, "Students_Payments");
+                        
+                       
+                        myCon.Close();
+                        return dsPayments1;
+
+                        break;
+
+                    case "Students_Payments_Penalty":
+                        DataSet dsPayments2 = new DataSet();
+                        SqlDataAdapter daPayments2 = new SqlDataAdapter("SELECT * FROM Students_Payments WHERE PaymentType = 'Penalty'", myCon);
+                        daPayments2.Fill(dsPayments2, "Students_Payments");
+                        
+                        myCon.Close();
+                        return dsPayments2;
+
+                        break;
+
+
 
                     default: 
                         return null;
