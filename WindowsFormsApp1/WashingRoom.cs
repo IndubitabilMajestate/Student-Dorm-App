@@ -28,7 +28,6 @@ namespace WindowsFormsApp1
                     if (control is PictureBox)
                     {
                         pictureBoxList.Add((PictureBox)control);
-                    // ((PictureBox)control).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
                     }
                 }
             }
@@ -39,11 +38,6 @@ namespace WindowsFormsApp1
                 (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
 
             }
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -64,24 +58,11 @@ namespace WindowsFormsApp1
             }*/
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            // Do something when the user clicks on tabPage1
-            MessageBox.Show("You clicked on tabPage2!");
-            /*
-            textBox1.Text = "sdhhdkhdk";
-            for (int i = 49; i < 97; i++)
-            {
-                (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
-
-            }*/
-        }
 
         private void Refr_button_Click(object sender, EventArgs e)
         {
             string floor = WashM_tabControl.SelectedTab.ToString();
-            textBox1.Text = floor;
-            MessageBox.Show(floor);
+   
             switch(floor)
             {
                 case "TabPage: {1st floor}":
@@ -94,7 +75,7 @@ namespace WindowsFormsApp1
                         break;
                     }
                 case "TabPage: {2nd floor}":
-                    for (int i = 49; i < 99; i++)
+                    for (int i = 48; i < 98; i++)
                     {
                         (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
 
@@ -102,7 +83,7 @@ namespace WindowsFormsApp1
                     break;
 
                 case "TabPage: {3rd floor}":
-                    for (int i = 100; i < 153; i++)
+                    for (int i = 98; i < 147; i++)
                     {
                         (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
 
@@ -110,7 +91,7 @@ namespace WindowsFormsApp1
                     break;
 
                 case "TabPage: {4th floor}":
-                    for (int i = 153; i < 209; i++)
+                    for (int i = 147; i < 196; i++)
                     {
                         (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
 
@@ -118,8 +99,23 @@ namespace WindowsFormsApp1
                     break;
 
                 case "TabPage: {5th floor}":
-                break;
+                    for (int i = 196; i < 245; i++)
+                    {
+                        (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+
+                    }
+                    break;
             }
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

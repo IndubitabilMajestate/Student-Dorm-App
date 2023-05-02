@@ -30,7 +30,6 @@ C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Wind
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrontPage_Form.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.Properties.Resources.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RentPenaltiesOnly.resources
-C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Rents.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoomManagementPage.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoomPage.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.StudentPage.resources
@@ -40,3 +39,5 @@ C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Stud
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.csproj.CoreCompileInputs.cache
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.exe
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.pdb
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminOtherPays.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminRents.resources

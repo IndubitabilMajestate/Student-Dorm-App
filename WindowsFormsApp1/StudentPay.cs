@@ -12,12 +12,30 @@ namespace WindowsFormsApp1
 {
     public partial class StudentPay : Form
     {
+        int curr_id;
         int Rent = 220; //lei
         int DayPenalty = 2; //lei
 
-        public StudentPay()
+        public StudentPay(int id)
         {
             InitializeComponent();
+            curr_id = id;
+
+            List<PictureBox> pictureBoxListPAY = new List<PictureBox>();
+
+            foreach (TabPage tabPage in Pay_tabControl.TabPages)
+            {
+                foreach (Control control in tabPage.Controls)
+                {
+                    if (control is PictureBox)
+                    {
+                        pictureBoxListPAY.Add((PictureBox)control);
+                        ((PictureBox)control).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                    }
+                }
+           
+
+            this.curr_id = curr_id; }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -48,6 +66,7 @@ namespace WindowsFormsApp1
                 if (PayType == "Penalties")
             {
                 //delete the penalty from Students_Penalties database
+                //add the data into Students_Payments Table;
             }
             else
             {
@@ -102,6 +121,11 @@ namespace WindowsFormsApp1
                 //add the data into Students_Payments Table;
                 //Penalty = 0 lei paid
             }
+
+        }
+
+        private void Refersh_button_Click(object sender, EventArgs e)
+        {
 
         }
     }
