@@ -77,6 +77,9 @@ namespace WindowsFormsApp1
             return -1;
         }
 
-        
+        private void FrontPage_Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

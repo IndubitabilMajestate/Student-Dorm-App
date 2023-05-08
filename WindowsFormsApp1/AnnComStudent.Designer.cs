@@ -48,25 +48,29 @@
             // 
             this.panel2.Controls.Add(this.AnnComPage_SA_lb);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            this.panel2.Location = new System.Drawing.Point(16, 15);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(279, 311);
+            this.panel2.Size = new System.Drawing.Size(372, 383);
             this.panel2.TabIndex = 5;
             // 
             // AnnComPage_SA_lb
             // 
             this.AnnComPage_SA_lb.FormattingEnabled = true;
-            this.AnnComPage_SA_lb.Location = new System.Drawing.Point(3, 16);
+            this.AnnComPage_SA_lb.ItemHeight = 16;
+            this.AnnComPage_SA_lb.Location = new System.Drawing.Point(4, 20);
+            this.AnnComPage_SA_lb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnnComPage_SA_lb.Name = "AnnComPage_SA_lb";
-            this.AnnComPage_SA_lb.Size = new System.Drawing.Size(273, 290);
+            this.AnnComPage_SA_lb.Size = new System.Drawing.Size(363, 356);
             this.AnnComPage_SA_lb.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(4, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 13);
+            this.label3.Size = new System.Drawing.Size(148, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Current Announcements";
             // 
@@ -80,85 +84,96 @@
             this.panel1.Controls.Add(this.AnnComPage_CCD_dp);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.AnnComPage_CC_btn);
-            this.panel1.Location = new System.Drawing.Point(297, 12);
+            this.panel1.Location = new System.Drawing.Point(396, 15);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 312);
+            this.panel1.Size = new System.Drawing.Size(348, 384);
             this.panel1.TabIndex = 6;
             // 
             // AnnComPage_CCC_tb
             // 
-            this.AnnComPage_CCC_tb.Location = new System.Drawing.Point(53, 53);
+            this.AnnComPage_CCC_tb.Location = new System.Drawing.Point(71, 65);
+            this.AnnComPage_CCC_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnnComPage_CCC_tb.Multiline = true;
             this.AnnComPage_CCC_tb.Name = "AnnComPage_CCC_tb";
-            this.AnnComPage_CCC_tb.Size = new System.Drawing.Size(200, 169);
+            this.AnnComPage_CCC_tb.Size = new System.Drawing.Size(265, 207);
             this.AnnComPage_CCC_tb.TabIndex = 0;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 60);
+            this.label5.Location = new System.Drawing.Point(4, 74);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 3;
             this.label5.Text = "Content";
             // 
             // AnnComPage_CCT_tb
             // 
-            this.AnnComPage_CCT_tb.Location = new System.Drawing.Point(53, 27);
+            this.AnnComPage_CCT_tb.Location = new System.Drawing.Point(71, 33);
+            this.AnnComPage_CCT_tb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnnComPage_CCT_tb.Name = "AnnComPage_CCT_tb";
-            this.AnnComPage_CCT_tb.Size = new System.Drawing.Size(200, 20);
+            this.AnnComPage_CCT_tb.Size = new System.Drawing.Size(265, 22);
             this.AnnComPage_CCT_tb.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 34);
+            this.label4.Location = new System.Drawing.Point(4, 42);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
+            this.label4.Size = new System.Drawing.Size(33, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Title";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Create Complaint";
             // 
             // AnnComPage_CCD_dp
             // 
-            this.AnnComPage_CCD_dp.Location = new System.Drawing.Point(53, 228);
+            this.AnnComPage_CCD_dp.Location = new System.Drawing.Point(71, 281);
+            this.AnnComPage_CCD_dp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnnComPage_CCD_dp.Name = "AnnComPage_CCD_dp";
-            this.AnnComPage_CCD_dp.Size = new System.Drawing.Size(200, 20);
+            this.AnnComPage_CCD_dp.Size = new System.Drawing.Size(265, 22);
             this.AnnComPage_CCD_dp.TabIndex = 1;
             this.AnnComPage_CCD_dp.Value = new System.DateTime(2023, 4, 21, 12, 28, 50, 0);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 3;
             // 
             // AnnComPage_CC_btn
             // 
-            this.AnnComPage_CC_btn.Location = new System.Drawing.Point(95, 263);
+            this.AnnComPage_CC_btn.Location = new System.Drawing.Point(127, 324);
+            this.AnnComPage_CC_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AnnComPage_CC_btn.Name = "AnnComPage_CC_btn";
-            this.AnnComPage_CC_btn.Size = new System.Drawing.Size(126, 23);
+            this.AnnComPage_CC_btn.Size = new System.Drawing.Size(168, 28);
             this.AnnComPage_CC_btn.TabIndex = 2;
             this.AnnComPage_CC_btn.Text = "Create Complaint";
             this.AnnComPage_CC_btn.UseVisualStyleBackColor = true;
+            this.AnnComPage_CC_btn.Click += new System.EventHandler(this.AnnComPage_CC_btn_Click);
             // 
             // AnnComStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 332);
+            this.ClientSize = new System.Drawing.Size(760, 409);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AnnComStudent";
             this.Text = "AnnComStudent";
             this.panel2.ResumeLayout(false);

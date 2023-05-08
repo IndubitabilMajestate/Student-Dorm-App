@@ -19,5 +19,9 @@ namespace StudentDormApp
             InitializeComponent();
         }
 
+        private void AnnComPage_CC_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
