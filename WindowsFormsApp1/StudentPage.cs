@@ -45,6 +45,15 @@ namespace StudentDormApp
             annComStudent.Show();
         }
 
-        
+        private void AdminPage_R_btn_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void AdminPage_RP_btn_Click(object sender, EventArgs e)
+        {
+            StudentPay stPay = new StudentPay(this.curr_id);
+
+        }
     }
 }

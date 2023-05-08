@@ -41,31 +41,31 @@
             // 
             this.FrontPage_UN_tb.Location = new System.Drawing.Point(77, 12);
             this.FrontPage_UN_tb.Name = "FrontPage_UN_tb";
-            this.FrontPage_UN_tb.Size = new System.Drawing.Size(128, 20);
+            this.FrontPage_UN_tb.Size = new System.Drawing.Size(128, 22);
             this.FrontPage_UN_tb.TabIndex = 0;
             // 
             // FrontPage_PW_tb
             // 
             this.FrontPage_PW_tb.Location = new System.Drawing.Point(77, 38);
             this.FrontPage_PW_tb.Name = "FrontPage_PW_tb";
-            this.FrontPage_PW_tb.Size = new System.Drawing.Size(128, 20);
+            this.FrontPage_PW_tb.Size = new System.Drawing.Size(128, 22);
             this.FrontPage_PW_tb.TabIndex = 0;
             // 
             // FrontPage_UN_lbl
             // 
             this.FrontPage_UN_lbl.AutoSize = true;
-            this.FrontPage_UN_lbl.Location = new System.Drawing.Point(11, 15);
+            this.FrontPage_UN_lbl.Location = new System.Drawing.Point(1, 15);
             this.FrontPage_UN_lbl.Name = "FrontPage_UN_lbl";
-            this.FrontPage_UN_lbl.Size = new System.Drawing.Size(58, 13);
+            this.FrontPage_UN_lbl.Size = new System.Drawing.Size(73, 16);
             this.FrontPage_UN_lbl.TabIndex = 1;
             this.FrontPage_UN_lbl.Text = "Username:";
             // 
             // FrontPage_PW_lbl
             // 
             this.FrontPage_PW_lbl.AutoSize = true;
-            this.FrontPage_PW_lbl.Location = new System.Drawing.Point(11, 43);
+            this.FrontPage_PW_lbl.Location = new System.Drawing.Point(1, 44);
             this.FrontPage_PW_lbl.Name = "FrontPage_PW_lbl";
-            this.FrontPage_PW_lbl.Size = new System.Drawing.Size(56, 13);
+            this.FrontPage_PW_lbl.Size = new System.Drawing.Size(70, 16);
             this.FrontPage_PW_lbl.TabIndex = 1;
             this.FrontPage_PW_lbl.Text = "Password:";
             // 
@@ -74,7 +74,7 @@
             this.FrontPage_ST_rbtn.AutoSize = true;
             this.FrontPage_ST_rbtn.Location = new System.Drawing.Point(77, 64);
             this.FrontPage_ST_rbtn.Name = "FrontPage_ST_rbtn";
-            this.FrontPage_ST_rbtn.Size = new System.Drawing.Size(62, 17);
+            this.FrontPage_ST_rbtn.Size = new System.Drawing.Size(70, 20);
             this.FrontPage_ST_rbtn.TabIndex = 2;
             this.FrontPage_ST_rbtn.TabStop = true;
             this.FrontPage_ST_rbtn.Text = "Student";
@@ -85,7 +85,7 @@
             this.FrontPage_AD_rbtn.AutoSize = true;
             this.FrontPage_AD_rbtn.Location = new System.Drawing.Point(151, 64);
             this.FrontPage_AD_rbtn.Name = "FrontPage_AD_rbtn";
-            this.FrontPage_AD_rbtn.Size = new System.Drawing.Size(54, 17);
+            this.FrontPage_AD_rbtn.Size = new System.Drawing.Size(63, 20);
             this.FrontPage_AD_rbtn.TabIndex = 2;
             this.FrontPage_AD_rbtn.TabStop = true;
             this.FrontPage_AD_rbtn.Text = "Admin";
@@ -115,6 +115,7 @@
             this.Controls.Add(this.FrontPage_UN_tb);
             this.Name = "FrontPage_Form";
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.FrontPage_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

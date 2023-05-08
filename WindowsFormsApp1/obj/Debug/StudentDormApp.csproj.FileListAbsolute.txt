@@ -16,3 +16,28 @@ C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\Wind
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.pdb
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AnnComStudent.resources
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.StudentPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj.mdf
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj_log.ldf
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\bin\Debug\Student-Dorm-App.exe.config
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\bin\Debug\Student-Dorm-App.exe
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\bin\Debug\Student-Dorm-App.pdb
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.csproj.AssemblyReference.cache
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminForm.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AnnComStudent.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AnnouncementPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ComplaintsPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrontPage_Form.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.Properties.Resources.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RentPenaltiesOnly.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoomManagementPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RoomPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.StudentPage.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StudentPay.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WashingRoom.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.csproj.GenerateResource.cache
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.csproj.CoreCompileInputs.cache
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.exe
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.pdb
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminOtherPays.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminRents.resources
