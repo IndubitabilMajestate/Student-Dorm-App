@@ -41,3 +41,4 @@ C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Stud
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Student-Dorm-App.pdb
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminOtherPays.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminRents.resources
+C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminAddStudent.resources

@@ -3775,7 +3775,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WashingRoom";
             this.Text = "WashingRoom";
-            this.Load += new System.EventHandler(this.WashingRoom_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -12,15 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class WashingRoom : Form
     {
-        public bool[,] seats = new bool[7,7];
+        public bool[,,] seats = new bool[7,7,5];
+        
+        Image green = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+        Image red = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\red.jpg");
 
         List<PictureBox> pictureBoxList = new List<PictureBox>();
 
         public WashingRoom()
         {
             InitializeComponent();
-
-
             foreach (TabPage tabPage in WashM_tabControl.TabPages)
             {
                 foreach (Control control in tabPage.Controls)
@@ -35,14 +36,9 @@ namespace WindowsFormsApp1
 
             for (int i = 0; i < 49; i++)
             {
-                (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                (pictureBoxList[i]).Image = green;
 
             }
-
-        }
-
-        private void WashingRoom_Load(object sender, EventArgs e)
-        {
 
         }
 
@@ -69,7 +65,9 @@ namespace WindowsFormsApp1
                     {
                         for (int i = 0; i < 48; i++)
                         {
-                            (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                           
+                            (pictureBoxList[i]).Image = green;
+                            
 
                         }
                         break;
@@ -77,7 +75,7 @@ namespace WindowsFormsApp1
                 case "TabPage: {2nd floor}":
                     for (int i = 48; i < 98; i++)
                     {
-                        (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                        (pictureBoxList[i]).Image = green;
 
                     }
                     break;
@@ -85,7 +83,7 @@ namespace WindowsFormsApp1
                 case "TabPage: {3rd floor}":
                     for (int i = 98; i < 147; i++)
                     {
-                        (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                        (pictureBoxList[i]).Image = green;
 
                     }
                     break;
@@ -93,7 +91,7 @@ namespace WindowsFormsApp1
                 case "TabPage: {4th floor}":
                     for (int i = 147; i < 196; i++)
                     {
-                        (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                        (pictureBoxList[i]).Image = green;
 
                     }
                     break;
@@ -101,7 +99,7 @@ namespace WindowsFormsApp1
                 case "TabPage: {5th floor}":
                     for (int i = 196; i < 245; i++)
                     {
-                        (pictureBoxList[i]).Image = Image.FromFile("C:\\Users\\Noemi\\Documents\\GitHub\\Student-Dorm-App\\WindowsFormsApp1\\green.jpg");
+                        (pictureBoxList[i]).Image = green;
 
                     }
                     break;

@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAddStudent.Designer.cs">
+      <DependentUpon>AdminAddStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="WashingRoom.Designer.cs">
       <DependentUpon>WashingRoom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminAddStudent.resx">
+      <DependentUpon>AdminAddStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>

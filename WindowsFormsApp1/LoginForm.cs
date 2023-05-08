@@ -19,10 +19,7 @@ namespace WindowsFormsApp1
         public FrontPage_Form()
         {
             InitializeComponent();
-            dbMethods = new DbMethods();
-            string[] studentData = dbMethods.ShowData("Students");
-            string message = String.Join("\n", studentData);
-            MessageBox.Show(message);
+            
         }
 
         private void FrontPage_LI_btn_Click(object sender, EventArgs e)
