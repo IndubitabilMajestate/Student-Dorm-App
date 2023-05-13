@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
         {
             AdminOtherPays adminOtherPays = new AdminOtherPays();
             adminOtherPays.Show();
+
         }
 
         private void AdminPage_R_btn_Click(object sender, EventArgs e)

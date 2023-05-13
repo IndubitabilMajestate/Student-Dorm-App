@@ -41,6 +41,7 @@
             this.StudentPage_MC_btn = new System.Windows.Forms.Button();
             this.StudentPage_SA_btn = new System.Windows.Forms.Button();
             this.AdminPage_MA_lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -53,17 +54,18 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(16, 15);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(683, 138);
             this.panel1.TabIndex = 1;
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Controls.Add(this.AdminPage_RP_btn);
             this.panel6.Location = new System.Drawing.Point(231, 4);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(219, 128);
             this.panel6.TabIndex = 0;
@@ -80,8 +82,8 @@
             // 
             // AdminPage_RP_btn
             // 
-            this.AdminPage_RP_btn.Location = new System.Drawing.Point(23, 43);
-            this.AdminPage_RP_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminPage_RP_btn.Location = new System.Drawing.Point(26, 31);
+            this.AdminPage_RP_btn.Margin = new System.Windows.Forms.Padding(4);
             this.AdminPage_RP_btn.Name = "AdminPage_RP_btn";
             this.AdminPage_RP_btn.Size = new System.Drawing.Size(167, 28);
             this.AdminPage_RP_btn.TabIndex = 1;
@@ -96,7 +98,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.StudentPage_SR_btn);
             this.panel4.Location = new System.Drawing.Point(457, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(219, 128);
             this.panel4.TabIndex = 0;
@@ -134,7 +136,7 @@
             // StudentPage_SR_btn
             // 
             this.StudentPage_SR_btn.Location = new System.Drawing.Point(20, 66);
-            this.StudentPage_SR_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StudentPage_SR_btn.Margin = new System.Windows.Forms.Padding(4);
             this.StudentPage_SR_btn.Name = "StudentPage_SR_btn";
             this.StudentPage_SR_btn.Size = new System.Drawing.Size(167, 28);
             this.StudentPage_SR_btn.TabIndex = 1;
@@ -148,7 +150,7 @@
             this.panel2.Controls.Add(this.StudentPage_SA_btn);
             this.panel2.Controls.Add(this.AdminPage_MA_lbl);
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(219, 128);
             this.panel2.TabIndex = 0;
@@ -156,7 +158,7 @@
             // StudentPage_MC_btn
             // 
             this.StudentPage_MC_btn.Location = new System.Drawing.Point(20, 66);
-            this.StudentPage_MC_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StudentPage_MC_btn.Margin = new System.Windows.Forms.Padding(4);
             this.StudentPage_MC_btn.Name = "StudentPage_MC_btn";
             this.StudentPage_MC_btn.Size = new System.Drawing.Size(167, 28);
             this.StudentPage_MC_btn.TabIndex = 1;
@@ -167,7 +169,7 @@
             // StudentPage_SA_btn
             // 
             this.StudentPage_SA_btn.Location = new System.Drawing.Point(20, 31);
-            this.StudentPage_SA_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StudentPage_SA_btn.Margin = new System.Windows.Forms.Padding(4);
             this.StudentPage_SA_btn.Name = "StudentPage_SA_btn";
             this.StudentPage_SA_btn.Size = new System.Drawing.Size(167, 28);
             this.StudentPage_SA_btn.TabIndex = 1;
@@ -185,13 +187,24 @@
             this.AdminPage_MA_lbl.TabIndex = 0;
             this.AdminPage_MA_lbl.Text = "Announcements and Complaints";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(26, 67);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 28);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Washing Room";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StudentPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(708, 162);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentPage";
             this.Text = "StudentPage";
             this.panel1.ResumeLayout(false);
@@ -220,5 +233,6 @@
         private System.Windows.Forms.Button StudentPage_SA_btn;
         private System.Windows.Forms.Label AdminPage_MA_lbl;
         private System.Windows.Forms.Label StudentPage_RN_lbl;
+        private System.Windows.Forms.Button button1;
     }
 }

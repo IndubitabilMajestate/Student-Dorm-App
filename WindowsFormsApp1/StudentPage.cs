@@ -14,6 +14,7 @@ namespace StudentDormApp
     public partial class StudentPage : Form
     {
         private int curr_id;
+        private DbMethods dbMethods = new DbMethods();
         public StudentPage(int id)
         {
             this.curr_id = id;
@@ -54,6 +55,12 @@ namespace StudentDormApp
         {
             StudentPay stPay = new StudentPay(this.curr_id);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WashingRoom wr = new WashingRoom(5);
+            wr.Show();
         }
     }
 }

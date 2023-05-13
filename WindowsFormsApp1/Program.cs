@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FrontPage_Form());
-            Application.Run(new AdminRents());
+            Application.Run(new WashingRoom(421));
 
         }
     }
