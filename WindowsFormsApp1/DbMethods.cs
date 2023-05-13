@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
 {
     public class DbMethods
     {
-        public string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\RAZVAN\DOCUMENTS\FACULTATE\INDUSTRIAL INFORMATICS\STUDENT-DORM-APP\WINDOWSFORMSAPP1\IIPRJ.MDF;Integrated Security=True;Max Pool Size=100";
+        public string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\iiprj.mdf;Integrated Security=True";
 
 
         public void AddToDb(string table)
@@ -283,7 +283,7 @@ namespace WindowsFormsApp1
 
         public DataSet GetStudbyId(int id)
         {
-
+            
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
@@ -325,7 +325,6 @@ namespace WindowsFormsApp1
            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
                 connection.Open();
-                DataSet ds = new DataSet();
                 string query = "INSERT INTO Complaints (Id, Title, Content, RoomId, Solved) " +
                                 "VALUES (@Id, @Title, @Content, @RoomId, @Solved)";
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -335,10 +334,7 @@ namespace WindowsFormsApp1
                     command.Parameters.AddWithValue("@Content", dataRow["Content"]);
                     command.Parameters.AddWithValue("@RoomId", dataRow["RoomId"]);
                     command.Parameters.AddWithValue("@Solved", dataRow["Solved"]);
-
-                    //SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    //adapter.Fill(ds);
-                    //MessageBox.Show(ds.GetXml());
+                    command.ExecuteNonQuery();
                 }
             }
         }

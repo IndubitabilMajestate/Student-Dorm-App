@@ -50,3 +50,4 @@ C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\Wind
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WashingRoom.resources
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj.mdf
 C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj_log.ldf
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\App.config
