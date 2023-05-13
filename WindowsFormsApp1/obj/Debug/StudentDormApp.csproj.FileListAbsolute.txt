@@ -42,3 +42,11 @@ C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\Stud
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminOtherPays.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminRents.resources
 C:\Users\Noemi\Documents\GitHub\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminAddStudent.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminAddStudent.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\StudentDormApp.AdminOtherPays.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RentPenaltiesOnly.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminRents.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.StudentPay.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WashingRoom.resources
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj.mdf
+C:\Users\Razvan\Documents\Facultate\Industrial Informatics\Student-Dorm-App\WindowsFormsApp1\bin\Debug\iiprj_log.ldf

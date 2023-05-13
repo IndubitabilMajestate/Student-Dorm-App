@@ -13,23 +13,51 @@ namespace WindowsFormsApp1
     public partial class RoomPage : Form
     {
         private int curr_id;
-        private Student curr_student;
+        private DbMethods dbMethods;
         public RoomPage(int id)
         {
             this.curr_id = id;
-            this.curr_student = new Student(/*TODO get data from DB*/23,"testN","testP","test@mail.com",true,"testF",2);
-            Student[] studs = new Student[] { 
-                new Student(23,"testN2","testP3","test2@mail.com",false,"testF",3),
-                new Student(23,"testN5","testP3","test4@mail.com",false,"testF2",1),
-                new Student(23,"testN1","testP2","test4@mail.com",true,"testF2",2) };
+            dbMethods = new DbMethods();
+            string[] data =
+            {
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["Room"].ToString(),
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["LastName"].ToString(),
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["FirstName"].ToString(),
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["Email"].ToString(),
+                (bool)dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["PCD"] ? "DA":"NU",
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["Faculty"].ToString(),
+                dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["Faculty_Year"].ToString(),
+            };
+            DataSet ds = new DataSet();
+            ds = dbMethods.GetStudbyRoom(int.Parse(data[0]), curr_id);
+            Student student2 = new Student(0, "", "", "", false, "", 0);
+            Student student3 = new Student(0, "", "", "", false, "", 0);
+            Student student4 = new Student(0, "", "", "", false, "", 0);
+            if (ds.Tables[0].Rows.Count != 0)
+            {
+                student2 = ConvertStudData(ds.Tables[0].Rows[0]) as Student;
+                try
+                {
+                    student3 = ConvertStudData(ds.Tables[0].Rows[1]) as Student;
+                }
+                catch {
+                }
+                try
+                {
+                    student4 = ConvertStudData(ds.Tables[0].Rows[2]) as Student;
+                }
+                catch {
+                }
+            }
+            Student[] studs = { student2, student3, student4 };
             InitializeComponent();
-            RoomID_lbl.Text     = "Room " + curr_id.ToString();
-            Nume1.Text          = curr_student.nume;
-            Prenume1.Text       = curr_student.prenume;
-            Contact1.Text       = curr_student.contact;
-            Facultate1.Text     = curr_student.fac;
-            An1.Text            = curr_student.an.ToString();
-            PCD1.Text           = curr_student.PCD ? "DA" : "NU";
+            RoomID_lbl.Text     = "Room " + data[0];
+            Nume1.Text          =   data[1];
+            Prenume1.Text       =   data[2];
+            Contact1.Text       =   data[3];
+            Facultate1.Text     =   data[4];
+            An1.Text            =   data[5];
+            PCD1.Text           =   data[6];
 
 
             Nume2.Text          = studs[0].nume;
@@ -56,7 +84,28 @@ namespace WindowsFormsApp1
         }
 
 
-        
+        private Student ConvertStudData(DataRow dr)
+        {
+            string[] data =
+            {
+                dr["Id"].ToString(),
+                dr["LastName"].ToString(),
+                dr["FirstName"].ToString(),
+                dr["Email"].ToString(),
+                dr["Faculty"].ToString(),
+                dr["Faculty_Year"].ToString(),
+            };
+            bool pcd = (bool)dr["PCD"];
+            return new Student(int.Parse(data[0]), data[1], data[2], data[3], pcd, data[4], int.Parse(data[5]));
+        }
+
+        private void RoomPage_SD_btn_Click(object sender, EventArgs e)
+        {
+            if(RoomPage_PW_tb.Text == dbMethods.GetStudbyId(curr_id).Tables[0].Rows[0]["Password"].ToString())
+            {
+                MessageBox.Show("Documente");
+            }
+        }
     }
     class Student
     {

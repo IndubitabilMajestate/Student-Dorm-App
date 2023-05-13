@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.RoomPage_SD_btn4 = new System.Windows.Forms.Button();
             this.Facultate4 = new System.Windows.Forms.Label();
             this.PCD4 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.Prenume4 = new System.Windows.Forms.Label();
             this.Nume4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.RoomPage_SD_btn3 = new System.Windows.Forms.Button();
             this.Facultate3 = new System.Windows.Forms.Label();
             this.PCD3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -62,7 +60,6 @@
             this.Prenume3 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.RoomPage_SD_btn2 = new System.Windows.Forms.Button();
             this.Facultate2 = new System.Windows.Forms.Label();
             this.PCD2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -78,7 +75,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Nume2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.RoomPage_SD_btn1 = new System.Windows.Forms.Button();
+            this.RoomPage_PW_tb = new System.Windows.Forms.TextBox();
+            this.RoomPage_SD_btn = new System.Windows.Forms.Button();
             this.Facultate1 = new System.Windows.Forms.Label();
             this.PCD1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -89,6 +87,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Prenume1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.Nume1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -121,7 +120,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.RoomPage_SD_btn4);
             this.panel5.Controls.Add(this.Facultate4);
             this.panel5.Controls.Add(this.PCD4);
             this.panel5.Controls.Add(this.label24);
@@ -140,15 +138,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(395, 200);
             this.panel5.TabIndex = 0;
-            // 
-            // RoomPage_SD_btn4
-            // 
-            this.RoomPage_SD_btn4.Location = new System.Drawing.Point(252, 127);
-            this.RoomPage_SD_btn4.Name = "RoomPage_SD_btn4";
-            this.RoomPage_SD_btn4.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_SD_btn4.TabIndex = 2;
-            this.RoomPage_SD_btn4.Text = "See Private Details";
-            this.RoomPage_SD_btn4.UseVisualStyleBackColor = true;
             // 
             // Facultate4
             // 
@@ -277,7 +266,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.RoomPage_SD_btn3);
             this.panel4.Controls.Add(this.Facultate3);
             this.panel4.Controls.Add(this.PCD3);
             this.panel4.Controls.Add(this.label17);
@@ -296,15 +284,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(395, 200);
             this.panel4.TabIndex = 0;
-            // 
-            // RoomPage_SD_btn3
-            // 
-            this.RoomPage_SD_btn3.Location = new System.Drawing.Point(230, 127);
-            this.RoomPage_SD_btn3.Name = "RoomPage_SD_btn3";
-            this.RoomPage_SD_btn3.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_SD_btn3.TabIndex = 2;
-            this.RoomPage_SD_btn3.Text = "See Private Details";
-            this.RoomPage_SD_btn3.UseVisualStyleBackColor = true;
             // 
             // Facultate3
             // 
@@ -433,7 +412,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.RoomPage_SD_btn2);
             this.panel3.Controls.Add(this.Facultate2);
             this.panel3.Controls.Add(this.PCD2);
             this.panel3.Controls.Add(this.label10);
@@ -452,15 +430,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(395, 200);
             this.panel3.TabIndex = 0;
-            // 
-            // RoomPage_SD_btn2
-            // 
-            this.RoomPage_SD_btn2.Location = new System.Drawing.Point(252, 126);
-            this.RoomPage_SD_btn2.Name = "RoomPage_SD_btn2";
-            this.RoomPage_SD_btn2.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_SD_btn2.TabIndex = 2;
-            this.RoomPage_SD_btn2.Text = "See Private Details";
-            this.RoomPage_SD_btn2.UseVisualStyleBackColor = true;
             // 
             // Facultate2
             // 
@@ -589,7 +558,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.RoomPage_SD_btn1);
+            this.panel2.Controls.Add(this.RoomPage_PW_tb);
+            this.panel2.Controls.Add(this.RoomPage_SD_btn);
             this.panel2.Controls.Add(this.Facultate1);
             this.panel2.Controls.Add(this.PCD1);
             this.panel2.Controls.Add(this.label7);
@@ -600,6 +570,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.Prenume1);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.Nume1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -609,14 +580,22 @@
             this.panel2.Size = new System.Drawing.Size(395, 200);
             this.panel2.TabIndex = 0;
             // 
-            // RoomPage_SD_btn1
+            // RoomPage_PW_tb
             // 
-            this.RoomPage_SD_btn1.Location = new System.Drawing.Point(230, 126);
-            this.RoomPage_SD_btn1.Name = "RoomPage_SD_btn1";
-            this.RoomPage_SD_btn1.Size = new System.Drawing.Size(110, 23);
-            this.RoomPage_SD_btn1.TabIndex = 2;
-            this.RoomPage_SD_btn1.Text = "See Private Details";
-            this.RoomPage_SD_btn1.UseVisualStyleBackColor = true;
+            this.RoomPage_PW_tb.Location = new System.Drawing.Point(116, 136);
+            this.RoomPage_PW_tb.Name = "RoomPage_PW_tb";
+            this.RoomPage_PW_tb.Size = new System.Drawing.Size(100, 20);
+            this.RoomPage_PW_tb.TabIndex = 3;
+            // 
+            // RoomPage_SD_btn
+            // 
+            this.RoomPage_SD_btn.Location = new System.Drawing.Point(222, 136);
+            this.RoomPage_SD_btn.Name = "RoomPage_SD_btn";
+            this.RoomPage_SD_btn.Size = new System.Drawing.Size(110, 21);
+            this.RoomPage_SD_btn.TabIndex = 2;
+            this.RoomPage_SD_btn.Text = "Vezi documente";
+            this.RoomPage_SD_btn.UseVisualStyleBackColor = true;
+            this.RoomPage_SD_btn.Click += new System.EventHandler(this.RoomPage_SD_btn_Click);
             // 
             // Facultate1
             // 
@@ -707,6 +686,15 @@
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Prenume";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(70, 140);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 13);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Parola:";
             // 
             // Nume1
             // 
@@ -820,10 +808,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label RoomID_lbl;
-        private System.Windows.Forms.Button RoomPage_SD_btn4;
-        private System.Windows.Forms.Button RoomPage_SD_btn3;
-        private System.Windows.Forms.Button RoomPage_SD_btn2;
-        private System.Windows.Forms.Button RoomPage_SD_btn1;
+        private System.Windows.Forms.Button RoomPage_SD_btn;
         private System.Windows.Forms.Label Facultate4;
         private System.Windows.Forms.Label PCD4;
         private System.Windows.Forms.Label label32;
@@ -856,5 +841,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Prenume1;
         private System.Windows.Forms.Label Nume1;
+        private System.Windows.Forms.TextBox RoomPage_PW_tb;
+        private System.Windows.Forms.Label label8;
     }
 }

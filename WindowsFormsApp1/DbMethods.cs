@@ -9,13 +9,15 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace WindowsFormsApp1
 {
     public class DbMethods
     {
-        public string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\iiprj.mdf;Integrated Security=True;Max Pool Size=100";
+        public string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\USERS\RAZVAN\DOCUMENTS\FACULTATE\INDUSTRIAL INFORMATICS\STUDENT-DORM-APP\WINDOWSFORMSAPP1\IIPRJ.MDF;Integrated Security=True;Max Pool Size=100";
 
 
         public void AddToDb(string table)
@@ -260,7 +262,85 @@ namespace WindowsFormsApp1
 
         }
 
+        public DataSet GetbyUser(string username, string table)
+        {
 
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                DataSet ds = new DataSet();
+                string query = table == "Admin_Login"? "SELECT * FROM Admin_Login WHERE Username = @username":"SELECT * FROM Students WHERE Username = @username";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@username", username);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(ds);
+                }
+                return ds;
+            }
 
+        }
+
+        public DataSet GetStudbyId(int id)
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                DataSet ds = new DataSet();
+                string query ="SELECT * FROM Students WHERE Id = @id";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(ds);
+                }
+                return ds;
+            }
+
+        }
+
+        public DataSet GetStudbyRoom(int room,int id)
+        {
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                DataSet ds = new DataSet();
+                string query = "SELECT * FROM Students WHERE Room = @room AND NOT Id = @id";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@room", room);
+                    command.Parameters.AddWithValue("@id", id);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(ds);
+                }
+                return ds;
+            }
+
+        }
+
+        public void AddComplaint(DataRow dataRow)
+        {
+           using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+                DataSet ds = new DataSet();
+                string query = "INSERT INTO Complaints (Id, Title, Content, RoomId, Solved) " +
+                                "VALUES (@Id, @Title, @Content, @RoomId, @Solved)";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", dataRow["Id"]);
+                    command.Parameters.AddWithValue("@Title", dataRow["Title"]);
+                    command.Parameters.AddWithValue("@Content", dataRow["Content"]);
+                    command.Parameters.AddWithValue("@RoomId", dataRow["RoomId"]);
+                    command.Parameters.AddWithValue("@Solved", dataRow["Solved"]);
+
+                    //SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    //adapter.Fill(ds);
+                    //MessageBox.Show(ds.GetXml());
+                }
+            }
+        }
     }
 }
